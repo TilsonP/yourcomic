@@ -7,13 +7,13 @@ function App() {
 
     const dispatch = useDispatch();
     const service = new comicServices()
-    
     function loadComic() {
         service.getRandomComic(dispatch)
     }
 
     useEffect(() => {
         loadComic()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (
