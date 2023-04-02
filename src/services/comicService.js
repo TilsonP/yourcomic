@@ -8,7 +8,7 @@ export class comicServices {
             num = Math.floor(Math.random() * 2757);
 
 
-        fetch(`https://cors-anywhere.herokuapp.com/xkcd.com/${num}/info.0.json`, {
+        fetch(`https://xkcd.com/${num}/info.0.json`, {
             method: 'GET',
             headers: {
                 Accept: "application/json",
