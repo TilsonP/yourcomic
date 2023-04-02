@@ -1,0 +1,52 @@
+@import "../../styles/partials/variables";
+@import "../../styles/partials/containers";
+
+.container_qualify {
+  @extend .container_primary;
+  width: 325px;
+  margin-top: 8px;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .icon_star {
+    margin-left: 4px;
+  }
+
+  .container_stars {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+.rating {
+  @extend .container_secondary;
+  justify-content: center;
+  padding: 3px 0;
+  border-radius: 5px;
+  font-size: 0;
+  direction: rtl;
+}
+
+.rating input[type="radio"] {
+  display: none;
+}
+
+.rating label {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.rating label img {
+  width: 45px;
+  height: 45px;
+  fill: #ccc;
+  filter: grayscale(100%);
+}
+
+.rating label:hover img,
+.rating label:hover ~ label img,
+.rating input[type="radio"]:checked ~ label img {
+  filter: brightness(100%);
+}

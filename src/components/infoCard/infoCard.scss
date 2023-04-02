@@ -1,0 +1,63 @@
+@import "../../styles/partials/variables";
+@import "../../styles/partials/containers";
+
+.container_info_card{
+  @extend .container_primary;
+  width: 325px;
+
+  .container_header{
+    @extend .container_secondary;
+    height: 46px;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+    color: $INFO-COLOR;
+    font-size: 24px;
+    font-weight: 800;
+
+    .icon{
+      @extend .container_i;
+      width: 33px;
+    }
+
+  }
+
+  .container_info{
+    @extend .container_secondary;
+    position: relative;
+    margin-top: 4px;
+    border-radius: 0 0 5px 5px;
+    height: 350px;
+    overflow: scroll;
+    overflow-x: hidden;
+
+    .show{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      width: 30px;
+      right: 15px;
+      bottom: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transform: rotate(90deg);
+      background-color: $INFO-COLOR;
+    }
+
+    table{
+      margin: 8px;
+      height: 50px;
+
+      th{
+        color: $TITLE-INFO;
+        text-align: left;
+      }
+
+      td{
+        color: $TEXT-COLOR;
+      }
+    }
+
+  }
+}
