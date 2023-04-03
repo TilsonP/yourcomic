@@ -1,0 +1,33 @@
+@import "../../styles/partials/variables";
+@import "../../styles/partials/containers";
+
+.container_search_card{
+  @extend .container_primary;
+  margin-top: 8px;
+}
+
+.container_search{
+  @extend .container_secondary;
+  height: 35px;
+  align-items: center;
+  justify-content: space-evenly ;
+  color: $INFO-COLOR;
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input{
+    width: 100px;
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container_search{
+    width: 107vh;
+    margin: 8px;
+  }
+}

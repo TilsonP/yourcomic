@@ -8,3 +8,9 @@
   margin-left: 8px;
   width: 600px;
 }
+
+@media only screen and (max-width: 800px) {
+  .container_home{
+    flex-direction: column-reverse;
+  }
+}

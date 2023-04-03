@@ -3,6 +3,7 @@ import {InfoCard} from "../components/infoCard/infoCard";
 import {ImageCard} from "../components/imageCard/imageCard";
 import './home.scss'
 import {Qualify} from "../components/qualify/qualify";
+import {Search} from "../components/search/search";
 
 export const Home = () => {
 
@@ -13,6 +14,7 @@ export const Home = () => {
             <div>
                 <InfoCard comic={comic}/>
                 <Qualify/>
+                <Search/>
             </div>
             <div className="image">
                 <ImageCard comic={comic}/>

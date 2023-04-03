@@ -11,7 +11,7 @@ export const ImageCard = (comic) => {
                 <div className="title">{currentComic.title}</div>
             </div>
             <div className="container_image">
-                <img src={currentComic.img} alt="" width="594"/>
+                <img src={currentComic.img} alt=""/>
             </div>
         </div>
     )

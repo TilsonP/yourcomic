@@ -33,4 +33,23 @@
   @extend .container_secondary;
   margin-top: 4px;
   width: 600px;
+
+  img{
+    width: 594px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .container_image_card{
+    width: 107vh;
+  }
+
+  .container_image{
+    width: 107vh;
+
+    img{
+      width: 106vh;
+    }
+  }
 }
