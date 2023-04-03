@@ -12,24 +12,26 @@ export const InfoCard = (comic) => {
             </div>
             <div className="container_info">
                 <table>
-                    <tr>
-                        <th>#:</th>
-                        <td>{currentComic.num}</td>
-                    </tr>
-                    <tr>
-                        <th>Title:</th>
-                        <td>{currentComic.title}</td>
-                    </tr>
-                    <tr>
-                        <th>Create date:</th>
-                        <td>{`${currentComic.day}/${currentComic.month}/${currentComic.year}`}</td>
-                    </tr>
-                    <tr>
-                        <th colSpan={2}>Transcription:</th>
-                    </tr>
-                    <tr>
-                        <td colSpan={2}>{currentComic.transcript ? currentComic.transcript : "No transcript available"}</td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <th>#:</th>
+                            <td>{currentComic.num}</td>
+                        </tr>
+                        <tr>
+                            <th>Title:</th>
+                            <td>{currentComic.title}</td>
+                        </tr>
+                        <tr>
+                            <th>Create date:</th>
+                            <td>{`${currentComic.day}/${currentComic.month}/${currentComic.year}`}</td>
+                        </tr>
+                        <tr>
+                            <th colSpan={2}>Transcription:</th>
+                        </tr>
+                        <tr>
+                            <td colSpan={2}>{currentComic.transcript ? currentComic.transcript : "No transcript available"}</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>

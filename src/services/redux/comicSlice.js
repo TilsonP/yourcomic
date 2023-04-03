@@ -31,4 +31,3 @@ export const comicSlice = createSlice({
 
 export const {getComic} = comicSlice.actions
 export default comicSlice.reducer
-
