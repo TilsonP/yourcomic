@@ -27,7 +27,7 @@
     margin-top: 4px;
     border-radius: 0 0 5px 5px;
     height: 350px;
-    overflow: scroll;
+    overflow: auto;
     overflow-x: hidden;
 
     .show{
@@ -59,19 +59,5 @@
       }
     }
 
-  }
-}
-
-
-
-@media only screen and (max-width: 800px) {
-  .container_info_card{
-    width: 107vh;
-    margin: 8px;
-  }
-
-  .container_info{
-    height: 250px;
-    font-size: 20px;
   }
 }

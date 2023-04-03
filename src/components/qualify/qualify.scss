@@ -50,10 +50,3 @@
 .rating input[type="radio"]:checked ~ label img {
   filter: brightness(100%);
 }
-
-@media only screen and (max-width: 800px) {
-  .container_qualify{
-    width: 107vh;
-    margin: 8px;
-  }
-}
