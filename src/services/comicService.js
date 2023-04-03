@@ -16,8 +16,14 @@ export class comicServices {
             },
         })
             .then((response) => response.json())
-            .then((data) => dispatch(getComic(data)))
+            .then((data) => {
+                    dispatch(getComic(data))
+                    return "ok"
+                }
+            )
             .catch((error) => console.log(error));
+
+        return "no"
 
     }
   
